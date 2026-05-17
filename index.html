@@ -52,43 +52,16 @@
 
   <script>
   const images = [
-  "アカシデ.jpg",
-  "アメリカガシワ.jpg",
-  "イヌマキ.jpg",
-  "ウメ.jpg",
-  "ウラジロガシ.jpg",
-  "オオシマザクラ.jpg",
-  "オニグルミ.jpg",
-  "カクアジサイ.jpg",
-  "カクレミノ.jpg",
-  "カツラ.jpg",
-  "カナメモチ.jpeg",
-  "カロリナポプラ.jpg",
-  "カンヒザクラ.jpg",
-  "ギボウシ.jpg",
-  "キャラボク.jpg",
-  "クサギ.jpg",
-  "クスノキ.jpg",
-  "クヌギ.jpg",
-  "クロマツ.jpg",
-  "クワ.jpg",
-  "コウヤマキ.jpeg",
-  "コウヨウザン.jpg",
-  "コナラ.jpg",
-  "コノテガシワ.jpg",
-  "コブシ.jpg",
-  "サカキ.jpg",
-  "サザンカ.jpg",
   "サワラ.jpeg",
   "サンシュユ.jpg",
   "シダレザクラ.jpg",
-  "シテンノジ.jpg",
+  "シデコブシ.jpg",
   "シラカシ.jpg",
   "シロヤマブキ.jpg",
-  "ズダジイ.jpg",
+  "スダジイ.jpg",
   "セイヨウイボタ.jpg",
   "セイヨウバクチノキ.jpg",
-  "セパルセコイア.jpg",
+  "センペルセコイヤ.jpg",
   "センリョウ.jpg",
   "ソメイヨシノ.jpg",
   "タイサンボク.jpg",
@@ -105,7 +78,7 @@
   "ヒマラヤスギ.jpg",
   "ヒメシャラ.jpg",
   "ヒュウガミズキ.jpg",
-  "ヒイラ.jpg",
+  "ビワ.jpg",
   "ボケ.jpg",
   "マダケ.jpg",
   "マテバシイ.jpg",
@@ -114,7 +87,7 @@
   "マンリョウ.jpg",
   "ミヤマビャクシン.jpg",
   "メタセコイヤ.jpg",
-  "メビバ.jpg",
+  "メヒシバ.jpg",
   "モクマオウ.jpg",
   "モチノキ.jpg",
   "モッコク.jpeg",
@@ -137,8 +110,8 @@
       document.getElementById("quizImage").src =
         "images/" + randomImage;
 
-      currentAnswer =
-        randomImage.replace(".jpg", "");
+    currentAnswer =
+  randomImage.replace(/\.(jpg|jpeg|webp)$/i, "");
 
       document.getElementById("answer").value = "";
     }
